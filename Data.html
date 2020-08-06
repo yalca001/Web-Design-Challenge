@@ -5,16 +5,14 @@
   <meta charset="UTF-8">
   <title>Data</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-  body {
-  background-color: lightgray;
-}
+  
 </style>
 </head>
 <body>
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container-fluid navbar-custom">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -23,7 +21,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class=" btn-primary navbar-brand" href="landing.html" ><div id="backgrdcolor"><p><font size = 13>Lattitude</font></p></div></a>
+      <div class="col-xs-9 phone-nav">
+        <a class="navbar-brand" href="#" id="backgrdcolor">Latitude</a>
+      </div>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="dropdown">
@@ -31,10 +31,10 @@
               <li class="dropdown">
               <a href="#" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plot<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Max Temperature</a></li>
-                <li><a href="#">Humidity</a></li>
-                <li><a href="#">Cloudiness</a></li>
-                <li><a href="#">Wind Speed</a></li>
+                <li><a href="Temperature.html">Max Temperature</a></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li><a href="Wind-Speed.html">Wind Speed</a></li>
               </ul>
             </li>  
               <!-- <div class="dropdown-menu">
@@ -52,8 +52,10 @@
     <!-- /.container-fluid -->
   </nav>
 
-<main class="container_data" style="position:relative">
-   <h2 style="color:aqua;position:absolute;top:30px;left:20px">Data</h2>
+<div class="container_data" style="position:relative">
+  <article class="description-content">
+  <div class="col-xs-12">
+    <h1 class="description-header">Data</h1>
    <br>
    <br><br>
    <p>The following table includes all of the data used for plotting in this project:</p>
@@ -5722,7 +5724,9 @@
   </tbody>
 </table>
 
-</main>
+  </div>
+</article>
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
